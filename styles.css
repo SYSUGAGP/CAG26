@@ -1,0 +1,55 @@
+:root{--ink:#123f58;--heading:#034c59;--muted:#537077;--line:#d8e7e7;--accent:#388c7a;--paper:#fcfcf9;--sidebar:#f4f8f6;--link:#285b82;color-scheme:light;font-size:16px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font-family:Georgia,'Times New Roman',serif;font-size:1.0625rem;line-height:1.5}a{color:var(--link);text-underline-offset:.2em}a:hover{color:var(--accent)}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #388c7a;outline-offset:4px}button{font:inherit}.skip-link{position:absolute;top:-100px;left:20px;background:white;padding:10px;z-index:20}.skip-link:focus{top:10px}
+.banner{position:relative;aspect-ratio:1774/378;background:var(--paper);overflow:hidden;border-bottom:1px solid var(--line)}.banner-art{position:absolute;inset:0;background-image:url('assets/approved-homepage.png');background-size:100% auto;background-repeat:no-repeat}.old-title-mask{position:absolute;left:30.1%;top:9.1%;width:40.6%;height:48%;background:#fafbf7;box-shadow:0 0 14px 11px #fafbf7}.banner-copy{position:absolute;top:9.1%;left:24%;width:52%;text-align:center;color:var(--heading)}h1{margin:0;font-weight:600;font-size:clamp(1.75rem,2.39vw,2.95rem);line-height:1.2;letter-spacing:-.035em}h1 span{display:block;font-size:.78em;letter-spacing:-.015em;margin-top:.1em;white-space:nowrap}.banner-copy p{font-size:clamp(.875rem,1.13vw,1.375rem);margin:1rem -2rem 0;white-space:nowrap;color:#174b6c}.divider{padding:0 .45rem}.gate-inscription{position:absolute;left:80.96%;top:64.65%;width:5.02%;height:4.8%;background:#faf9ef;color:#ca8580;font-family:'Noto Serif CJK TC','Noto Serif CJK SC',serif;font-size:clamp(6px,.81vw,16px);line-height:1.15;text-align:center;letter-spacing:0;white-space:nowrap}
+.page-layout{display:grid;grid-template-columns:19.2% minmax(0,1fr);min-height:510px;max-width:2000px;margin:auto}.sidebar{background:linear-gradient(100deg,#f8faf8,#f1f7f5);border-right:1px solid var(--line);padding:16px 12px 32px 22px}.sidebar nav{display:grid;gap:3px}.sidebar nav a{display:flex;align-items:center;gap:18px;padding:9px 13px;border-radius:4px;text-decoration:none;line-height:1.4;font-size:1rem;min-height:43px}.sidebar svg{width:23px;height:23px;flex-shrink:0;color:var(--heading)}.sidebar a[aria-current]{background:#e3eeea;color:#073f50}.sidebar a:hover{background:#e9f2ef}.sidebar-rule{border-top:1px solid #9bb8bc;margin:29px 10px 0}.menu-toggle{display:none}main{min-width:0;padding:20px 2.6vw 38px 3.8vw}main:focus{outline:none}.page-section{scroll-margin-top:24px}.page-section+.page-section{margin-top:3rem}.js .page-section[hidden]{display:none}.js .page-section{margin-top:0}h2,h3,h4{color:var(--heading);font-weight:600}h2{font-size:2rem;letter-spacing:-.025em;line-height:1.2;margin:0 0 1rem}h2:after{content:'';display:block;width:42px;height:2px;background:#4baa7d;margin-top:8px}h3{font-size:1.4rem;margin:1.7rem 0 .65rem}h4{font-size:1.13rem;line-height:1.45;margin:.1rem 0 .75rem}p{margin:.45rem 0 .8rem}address{font-style:normal}.home-grid{display:grid;grid-template-columns:minmax(0,1fr) 33%;gap:4.5vw}.home-grid>div>h2:not(:first-child){margin-top:.25rem;margin-bottom:.55rem}.home-grid>div>p{line-height:1.42}.speaker-list{list-style:none;padding:0;margin:.2rem 0 1rem;display:grid;grid-template-rows:repeat(9,auto);grid-auto-flow:column;grid-template-columns:1fr 1fr;column-gap:2rem;line-height:1.35}.speaker-list li{break-inside:avoid}.alphabetical-note{font-size:.9375rem;color:#4c6589;margin-top:1rem!important}.venue-card{border:1px solid var(--line);border-radius:5px;background:linear-gradient(115deg,#fbfcfb,#f5f8f7);align-self:start;padding:17px 19px 18px}.venue-card h2{font-size:1.65rem;margin-bottom:.8rem}.detail-row{display:flex;gap:15px;align-items:flex-start;margin:.7rem 0}.detail-row svg{width:23px;height:26px;flex-shrink:0;margin-top:4px;color:var(--heading)}.detail-row p{margin:0;line-height:1.4}.card-rule{height:1px;background:#a5bcc2;margin:18px 0}.building-art{width:100%;aspect-ratio:420/185;background-image:url('assets/approved-homepage.png');background-size:422.38095% auto;background-position:96.75037% 90.59829%;background-repeat:no-repeat}.full-speakers{max-width:830px;line-height:1.95}.travel-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}.travel-grid article{border-left:2px solid #d1e2db;padding:0 0 0 20px}.travel-grid p{font-size:1rem;line-height:1.65}.source-note{font-size:.9rem;color:var(--muted);margin-top:1.3rem}.hotel-subtitle{color:var(--muted)}.hotel-grid{margin-top:1.5rem}.table-scroll{overflow-x:auto;margin:1rem 0 2rem}table{width:100%;border-collapse:collapse;font-size:1rem}th,td{text-align:left;border-bottom:1px solid var(--line);padding:13px 16px}thead{background:#edf4f0}th{font-weight:600}tbody th{white-space:nowrap}.abstracts details{border-bottom:1px solid var(--line);padding:12px 0}.abstracts summary{cursor:pointer;color:var(--heading)}.abstracts details p{padding-left:20px;color:var(--muted);font-size:1rem}.site-footer{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding:18px 3vw;color:var(--muted);font-size:.875rem}.site-footer span:last-child{white-space:nowrap}
+@media(min-width:1700px){body{font-size:1.1875rem}.sidebar nav a{font-size:1.125rem;padding-top:11px;padding-bottom:11px}h2{font-size:2.3rem}.venue-card h2{font-size:1.9rem}.page-layout{min-height:520px}}
+@media(max-width:1150px){.sidebar{padding:14px 10px}.sidebar nav a{gap:10px;padding:10px 8px;font-size:.9rem}.home-grid{gap:24px;grid-template-columns:minmax(0,1fr) 32%}main{padding:24px}.venue-card{padding:16px 13px}.venue-card h2{font-size:1.4rem}.detail-row{gap:10px}.detail-row p{font-size:.9375rem}.speaker-list{font-size:1rem;column-gap:15px}.banner-copy p{margin-top:.7rem}h2{font-size:1.85rem}}
+@media(max-width:850px){.banner{aspect-ratio:auto;height:290px}.banner-art{top:auto;height:181px;background-size:850px auto;background-position:center top}.old-title-mask{left:calc(50% - 172px);top:16px;width:345px;height:88px;box-shadow:0 0 12px 10px #fafbf7}.banner-copy{left:5%;top:18px;width:90%;background:#fafbf7;padding-bottom:12px}h1{font-size:1.9rem;letter-spacing:-.025em}h1 span{font-size:.7em;white-space:normal}.banner-copy p{font-size:.9375rem;white-space:normal;margin:.65rem 0 0}.gate-inscription{left:calc(50% + 263px);top:117px;width:43px;height:9px;font-size:7px}.page-layout{grid-template-columns:1fr;min-height:0}.sidebar{padding:10px 20px;border-right:0;border-bottom:1px solid var(--line)}.sidebar nav{display:flex;flex-wrap:wrap;gap:3px 7px}.sidebar nav a{font-size:.9375rem;padding:8px 10px}.sidebar svg{width:19px;height:19px}.sidebar-rule{display:none}.home-grid{grid-template-columns:minmax(0,1fr) 32%;gap:25px}main{padding:27px 24px 40px}.speaker-list{font-size:1.0625rem}.venue-card h2{font-size:1.4rem}.detail-row{gap:8px}.detail-row svg{width:19px}.detail-row p{font-size:.9375rem}.travel-grid{gap:24px}}
+@media(max-width:600px){.banner{height:290px}.banner-art{height:135px;background-size:630px auto}.old-title-mask{left:calc(50% - 130px);top:9px;width:263px;height:72px;box-shadow:0 0 8px 6px #fafbf7}.gate-inscription{left:calc(50% + 195px);top:86px;width:32px;height:8px;font-size:5px}.banner-copy{top:19px;padding-bottom:10px}.banner-copy h1{font-size:1.7rem;line-height:1.18}.banner-copy h1 span{font-size:.72em;line-height:1.3;margin-top:7px}.banner-copy p{font-size:.9rem;max-width:340px;margin:.65rem auto 0}.divider{display:none}.sidebar{padding:9px 16px}.js .menu-toggle{display:flex;justify-content:space-between;align-items:center;width:100%;border:0;background:transparent;padding:7px;color:var(--heading);font-size:1rem}.js .sidebar nav{display:none}.js .sidebar nav.is-open{display:grid;grid-template-columns:1fr 1fr;padding-top:10px}.sidebar nav a{font-size:.9rem;gap:8px}.home-grid{grid-template-columns:1fr;gap:28px}main{padding:25px 22px 35px}h2{font-size:1.9rem}.home-grid>div>p{line-height:1.55}.speaker-list{line-height:1.65;font-size:1rem;column-gap:16px}.venue-card{padding:20px}.venue-card h2{font-size:1.6rem}.detail-row p{font-size:1rem}.building-art{max-width:420px;margin:0 auto}.travel-grid{grid-template-columns:1fr;gap:23px}.site-footer{padding:17px 22px;display:block;font-size:.8125rem}.site-footer span{display:block;margin-bottom:6px}.full-speakers{font-size:1.0625rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{.banner{height:200px;aspect-ratio:auto}.banner-art{display:none}.banner-copy{position:static;width:100%;padding:25px}.sidebar,.site-footer{display:none}.page-layout{display:block}.js .page-section[hidden]{display:block!important}.page-section{margin-top:30px!important;break-inside:avoid}main{padding:0}.home-grid{display:block}.venue-card{display:none}.abstracts details{display:none}}
+
+/* Fit the new banner without cropping either landmark. */
+.banner {
+  aspect-ratio: 2048 / 683;
+}
+
+.banner-art {
+  background-image: url("assets/conference-banner.png");
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+/* The new image contains no old title to conceal,
+   and its Chinese inscription is already included. */
+.old-title-mask,
+.gate-inscription {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .banner {
+    aspect-ratio: auto;
+    height: 290px;
+  }
+
+  .banner-art {
+    inset: auto 0 0;
+    height: min(170px, 33.333vw);
+    background-size: contain;
+    background-position: center bottom;
+  }
+}
+
+/* Reduce original banner height by 20%, keeping full width. */
+@media (min-width: 851px) {
+  .banner {
+    aspect-ratio: 2048 / 546;
+  }
+
+  .banner-art {
+    background-size: 100% 100%;
+    background-position: center;
+  }
+}

@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<style>
+  #speakers .speaker-affiliations {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  #speakers .speaker-affiliations li {
+    display: grid;
+    grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+    gap: 24px;
+    padding: 10px 0;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  #speakers .affiliation {
+    color: #537077;
+    font-size: 0.95em;
+  }
+
+  @media (max-width: 600px) {
+    #speakers .speaker-affiliations li {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+      gap: 16px;
+    }
+  }
+</style>
+
+<style>
+  #program .timetable-scroll {
+    overflow-x: auto;
+    margin: 20px 0 32px;
+  }
+
+  #program .timetable {
+    width: 100%;
+    min-width: 820px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 16px;
+  }
+
+  #program .timetable caption {
+    text-align: left;
+    color: #537077;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  #program .timetable th,
+  #program .timetable td {
+    border: 1px solid #ccded8;
+    padding: 16px 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  #program .timetable thead th {
+    background: #07515a;
+    color: white;
+    font-weight: normal;
+  }
+
+  #program .timetable thead th:first-child {
+    width: 130px;
+  }
+
+  #program .timetable tbody th {
+    background: #f3f7f5;
+    color: #123f58;
+    font-weight: normal;
+    white-space: nowrap;
+  }
+
+  #program .timetable .break-row td {
+    background: #edf5f2;
+    color: #537077;
+    font-style: italic;
+  }
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contemporary Algebraic Geometry—International Workshop in Guangzhou 2026</title>
+  <meta name="description" content="Contemporary Algebraic Geometry—International Workshop in Guangzhou 2026. December 1–5, 2026, School of Mathematics, Sun Yat-sen University, Guangzhou, China.">
+  <meta name="theme-color" content="#07515a">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%2307515a%22%2F%3E%3Ctext%20x%3D%2216%22%20y%3D%2222%22%20text-anchor%3D%22middle%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2218%22%20fill%3D%22white%22%3EAG%3C%2Ftext%3E%3C%2Fsvg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- All wording is ordinary HTML. See EDITING.md for editing instructions. -->
+<header class="banner">
+  <div class="banner-art" role="img" aria-label="Watercolor illustration of Canton Tower on the left and the Sun Yat-sen University gate on the right.">
+    <div class="old-title-mask" aria-hidden="true"></div>
+    
+  </div>
+  <div class="banner-copy">
+    <h1>Contemporary Algebraic Geometry<span>— International Workshop in Guangzhou 2026</span></h1>
+    <p>December 1–5, 2026 <span class="divider">|</span> School of Mathematics, Sun Yat-sen University</p>
+  </div>
+</header>
+<div class="page-layout">
+  <aside class="sidebar">
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Conference menu <span aria-hidden="true">☰</span></button>
+    <nav id="navigation" aria-label="Conference navigation"><a href="#home" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10H14v-6h-4v6H3Z"/></svg><span>Home</span></a>
+<a href="#speakers"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M3 21v-4a6 6 0 0 1 12 0v4M16 4a3 3 0 0 1 0 6m2 4a5 5 0 0 1 3 5v2"/></svg><span>Speakers</span></a>
+<a href="#program"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 2v6m10-6v6M3 11h18m-13 4h1m6 0h1m-8 3h1"/></svg><span>Program</span></a>
+<a href="#venue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Venue</span></a>
+<a href="#travel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 3-7 18-4-8-8-4 19-6Z M11 13 22 3"/></svg><span>Travel & Accommodation</span></a>
+<a href="#registration"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h10l4 4v14H5Z M14 3v5h5M8 12h8m-8 4h8"/></svg><span>Registration</span></a>
+<a href="#organizers"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="3"/><path d="M6 21v-4a6 6 0 0 1 12 0v4M3 9a3 3 0 0 0 0 6m18-6a3 3 0 0 1 0 6"/></svg><span>Organizers</span></a>
+</nav>
+    <div class="sidebar-rule"></div>
+  </aside>
+  <main id="main" tabindex="-1">
+    <section id="home" class="page-section" aria-labelledby="welcome-heading">
+      <div class="home-grid">
+        <div>
+          <h2 id="welcome-heading">Welcome</h2>
+          <p>The <em>Contemporary Algebraic Geometry</em>—International Workshop in Guangzhou 2026 will be held at the School of Mathematics, Sun Yat-sen University, from December 1 to 5, 2026. The workshop brings together researchers in algebraic and complex geometry, with an emphasis on projective geometry, birational geometry, and derived categories, as well as their interactions. It provides a forum for sharing recent developments, exchanging ideas, and encouraging collaboration.</p>
+          <p>We warmly welcome all participants!</p>
+          <h2>Speakers</h2>
+          <ul class="speaker-list"><li>Lawrence Ein</li>
+<li>Osamu Fujino</li>
+<li>Dongseon Hwang</li>
+<li>Jun-Muk Hwang</li>
+<li>Atsushi Ito</li>
+<li>Chen Jiang</li>
+<li>Alexander Kuznetsov</li>
+<li>Yongnam Lee</li>
+<li>Shin-ichi Matsumura</li>
+<li>Jihun Park</li>
+<li>Jinhyung Park</li>
+<li>Laura Pertusi</li>
+<li>Santai Qu</li>
+<li>Andrés Rojas</li>
+<li>Paolo Stellari</li>
+<li>Lingyao Xie</li></ul>
+          
+        </div>
+        <aside class="venue-card" aria-labelledby="date-venue-heading">
+          <h2 id="date-venue-heading">Date and Venue</h2>
+          <div class="detail-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 2v6m10-6v6M3 11h18m-13 4h1m6 0h1m-8 3h1"/></svg><p>December 1–5, 2026</p></div>
+          <div class="detail-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><p>Bldg 266 Room 209,<br>School of Mathematics,<br>Sun Yat-sen University<br>Guangzhou, China</p></div>
+          <div class="card-rule"></div>
+          <img src="assets/math-lecture-building.png" alt="Watercolor illustration of the New Mathematics Building, Sun Yat-sen University." width="1774" height="887" style="display: block; width: 100%; height: auto; aspect-ratio: 420 / 185; object-fit: contain;">
+        </aside>
+      </div>
+    </section>
+    <section id="speakers" class="page-section" aria-labelledby="speakers-heading">
+      <h2 id="speakers-heading">Invited Speakers</h2>
+      <ul class="speaker-affiliations">
+  <li><span>Lawrence Ein</span><span class="affiliation">University of Illinois Chicago</span></li>
+  <li><span>Osamu Fujino</span><span class="affiliation">Kyoto University</span></li>
+  <li><span>Dongseon Hwang</span><span class="affiliation">IBS Center for Complex Geometry</span></li>
+  <li><span>Jun-Muk Hwang</span><span class="affiliation">IBS Center for Complex Geometry</span></li>
+  <li><span>Atsushi Ito</span><span class="affiliation">University of Tsukuba</span></li>
+  <li><span>Chen Jiang</span><span class="affiliation">Fudan University</span></li>
+  <li><span>Alexander Kuznetsov</span><span class="affiliation">Steklov Mathematical Institute</span></li>
+  <li><span>Yongnam Lee</span><span class="affiliation">KAIST/IBS Center of Complex Geometry</span></li>
+  <li><span>Shin-ichi Matsumura</span><span class="affiliation">Tohoku University</span></li>
+  <li><span>Jihun Park</span><span class="affiliation">POSTECH</span></li>
+  <li><span>Jinhyung Park</span><span class="affiliation">KAIST</span></li>
+  <li><span>Laura Pertusi</span><span class="affiliation">University of Milan</span></li>
+  <li><span>Santai Qu</span><span class="affiliation">BIMSA</span></li>
+  <li><span>Andrés Rojas</span><span class="affiliation">University of Barcelona,</span></li>
+  <li><span>Paolo Stellari</span><span class="affiliation">University of Milan</span></li>
+  <li><span>Lingyao Xie</span><span class="affiliation">Zhejiang University</span></li>
+</ul>
+      
+    </section>
+    <section id="program" class="page-section" aria-labelledby="program-heading">
+      <h2 id="program-heading">Program</h2>
+      <p>The detailed timetable, talk titles, and abstracts will be announced soon.</p>
+      <h3>Schedule</h3>
+      <div class="timetable-scroll"
+     tabindex="0"
+     role="region"
+     aria-label="Workshop timetable">
+
+  <table class="timetable">
+    <thead>
+      <tr>
+        <th scope="col">Time</th>
+        <th scope="col">Tuesday<br>12/01</th>
+        <th scope="col">Wednesday<br>12/02</th>
+        <th scope="col">Thursday<br>12/03</th>
+        <th scope="col">Friday<br>12/04</th>
+        <th scope="col">Saturday<br>12/05</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">09:30–10:30</th>
+        <td>To be announced</td>
+        <td>To be announced</td>
+        <td>To be announced</td>
+        <td>To be announced</td>
+        <td>To be announced</td>
+      </tr>
+
+      <tr class="break-row">
+        <th scope="row">10:30–11:00</th>
+        <td colspan="5">Coffee break</td>
+      </tr>
+
+      <tr>
+        <th scope="row">11:00–12:00</th>
+        <td>To be announced</td>
+        <td>To be announced</td>
+        <td>To be announced</td>
+        <td>To be announced</td>
+        <td>To be announced</td>
+      </tr>
+
+      <tr class="break-row">
+        <th scope="row">12:00–14:30</th>
+        <td colspan="5">Lunch break</td>
+      </tr>
+
+      <tr>
+  <th scope="row">14:30–15:30</th>
+  <td>To be announced</td>
+  <td>To be announced</td>
+  <td rowspan="3" style="background: #edf5f2; color: #537077;">
+    Free Discussion
+  </td>
+  <td>To be announced</td>
+  <td rowspan="3" style="background: #edf5f2; color: #537077;">
+    Free Discussion
+  </td>
+</tr>
+
+<tr class="break-row">
+  <th scope="row">15:30–16:00</th>
+  <td>Coffee break</td>
+  <td>Coffee break</td>
+  <td>Coffee break</td>
+</tr>
+
+<tr>
+  <th scope="row">16:00–17:00</th>
+  <td>To be announced</td>
+  <td>To be announced</td>
+  <td>To be announced</td>
+</tr>
+    </tbody>
+  </table>
+</div>
+      <h3>Talks and Abstracts</h3>
+      <div class="abstracts"><details><summary>Lawrence Ein</summary><p><strong>Title forthcoming.</strong></p><p>Abstract forthcoming.</p></details>
+<details><summary>Osamu Fujino</summary><p><strong>Title forthcoming.</strong></p><p>Abstract forthcoming.</p></details>
+<details><summary>Dongseon Hwang</summary><p><strong>Title forthcoming.</strong></p><p>Abstract forthcoming.</p></details>
+<details><summary>Jun-Muk Hwang</summary><p><strong>Title forthcoming.</strong></p><p>Abstract forthcoming.</p></details>
+<details><summary>Atsushi Ito</summary><p><strong>Title forthcoming.</strong></p><p>Abstract forthcoming.</p></details>
+<details><summary>Chen Jiang</summary><p><strong>Title forthcoming.</strong></p><p>Abstract forthcoming.</p></details>
+<details><summary>Alexander Kuznetsov</summary><p><strong>Title forthcoming.</strong></p><p>Abstract forthcoming.</p></details>
+<details><summary>Yongnam Lee</summary><p><strong>Title forthcoming.</strong></p><p>Abstract forthcoming.</p></details>
+<details><summary>Shin-ichi Matsumura</summary><p><strong>Title forthcoming.</strong></p><p>Abstract forthcoming.</p></details>
+<details><summary>Jihun Park</summary><p><strong>Title forthcoming.</strong></p><p>Abstract forthcoming.</p></details>
+<details><summary>Jinhyung Park</summary><p><strong>Title forthcoming.</strong></p><p>Abstract forthcoming.</p></details>
+<details><summary>Laura Pertusi</summary><p><strong>Title forthcoming.</strong></p><p>Abstract forthcoming.</p></details>
+<details><summary>Santai Qu</summary><p><strong>Title forthcoming.</strong></p><p>Abstract forthcoming.</p></details>
+<details><summary>Andrés Rojas</summary><p><strong>Title forthcoming.</strong></p><p>Abstract forthcoming.</p></details>
+<details><summary>Paolo Stellari</summary><p><strong>Title forthcoming.</strong></p><p>Abstract forthcoming.</p></details>
+<details><summary>Lingyao Xie</summary><p><strong>Title forthcoming.</strong></p><p>Abstract forthcoming.</p></details></div>
+    </section>
+    <section id="venue" class="page-section" aria-labelledby="venue-heading">
+      <h2 id="venue-heading">Venue</h2>
+      <address>South Campus<br>New Mathematics Building (Bldg. 266)<br>No. 135 Xingang Xi Road, Haizhu District<br>Guangzhou 510275, Guangdong, China</address>
+      <p>The lecture building and room for the December workshop will be announced.</p>
+  	<h3>
+  		<a href="assets/campus-map.jpg" target="_blank" rel="noopener">
+    		Campus Map
+ 	        </a>
+	</h3>
+	<figure style="width: 300px; max-width: 100%;
+               margin: 24px 0 0 auto;">
+  		<img src="assets/campus-watercolor.png"
+       		alt="Watercolor illustration of Sun Yat-sen University’s South Campus."
+       		loading="lazy"
+       		style="display: block; width: 100%; height: auto;">
+	</figure>
+    </section>
+
+    <section id="travel" class="page-section" aria-labelledby="travel-heading">
+      <h2 id="travel-heading">Travel &amp; Accommodation</h2>
+      <h3>Getting to South Campus</h3>
+      <p>Sun Yat-sen University, No. 135 Xingang Xi Road, Haizhu District, Guangzhou.</p>
+      <div class="travel-grid">
+        <article><h4>From Guangzhou Baiyun International Airport</h4>
+          <p><strong>Metro.</strong> Take Line 3 towards Panyu Square (番禺广场) to Kecun (客村站) Station. Change to Line 8 towards Jiaoxin (滘心) and get off at Sun Yat-sen University (中大) Station. Enter the South Gate of South Campus.</p>
+          <p><strong>Taxi or ride-hailing.</strong> Direct to SYSU South Campus (South Gate or North Gate), about 50–70 minutes, depending on traffic.</p>
+        </article>
+        <article><h4>From Guangzhou South Railway Station</h4>
+          <p><strong>Metro.</strong> Take Line 2 towards Jiahewanggang (嘉禾望岗) to Changgang (昌岗). Change to Line 8 towards Wanshengwei (万胜围) and get off at Sun Yat-sen University (中大) Station. Enter the South Gate of South Campus.</p>
+          <p><strong>Taxi or ride-hailing.</strong> Direct to SYSU South Campus (South Gate or North Gate), about 30–40 minutes, depending on traffic.</p>
+        </article>
+      </div>
+
+      <aside aria-label="Note for driver"
+       style="margin: 24px 0; padding: 20px 24px;
+              background: #edf5f2;
+              border-left: 4px solid #388c7a;
+              border-radius: 6px;
+              color: #123f58;">
+
+  <h4 style="margin: 0 0 12px; color: #07515a;
+             font-size: 18px;">
+    Note for driver
+  </h4>
+
+  <p lang="zh-CN"
+     style="margin: 0 0 10px; font-size: 22px;
+            line-height: 1.6; font-weight: 600;">
+    司机你好，请带我去中山大学南校区北门
+  </p>
+
+  <p style="margin: 0; font-size: 17px; line-height: 1.6;">
+    Hello driver, please take me to the North Gate of the South Campus of
+    Sun Yat-sen University.
+  </p>
+</aside>
+ 
+      <h3>Accommodation</h3>
+      <p>Accommodation will be arranged for invited speakers. Booking dates and arrangements will be confirmed later.</p>
+      <div class="travel-grid hotel-grid">
+        <article><h4>SYSU Kaifeng Hotel</h4><p class="hotel-subtitle">中大凯丰酒店（广州中大学人馆店）</p><p>588 Binjiang East Road, Haizhu District<br>Inside Sun Yat-sen University, South Campus</p><p><a href="tel:+862089222888">+86 20 8922 2888</a><br>note: approximately 15–20 minutes on foot to the lecture hall.</p></article>
+        <article><h4>JI Hotel</h4><p class="hotel-subtitle">全季酒店（广州中大地铁站店）</p><p>76 Yile Road, Haizhu District<br>Guangzhou</p><p><a href="tel:+862083599686">+86 20 8359 9686</a><br>note: approximately 20–25 minutes on foot to the lecture hall.</p></article>
+      </div>
+   
+    </section>
+    <section id="registration" class="page-section" aria-labelledby="registration-heading">
+      <h2 id="registration-heading">Registration</h2>
+      <p>Registration details will be announced.</p>
+      <div style="display: flex; justify-content: flex-end; align-items: flex-end; min-height: 300px; margin-top: 32px;">
+        <div style="width: 100%; max-width: 420px;">
+          <div class="building-art" role="img" aria-label="Watercolor illustration of a historic red-brick building at Sun Yat-sen University."></div>
+        </div>
+      </div>
+    </section>
+    <section id="organizers" class="page-section" aria-labelledby="organizers-heading">
+      <h2 id="organizers-heading">Organizers</h2>
+      <h3>Host</h3><p>School of Mathematics, Sun Yat-sen University</p>
+      <h3>Organizing Committee</h3><p>Bingyi Chen, Jianxun Hu, Changzheng Li, Haidong Liu, Lei Song, and Shizhuo Zhang</p>
+      <h3>Secretary</h3><p>Jinyun Yu (yujinyun@mail.sysu.edu.cn)</p>
+      <h3>Supported by</h3>
+      <ul>
+     	<li>National Key R&amp;D Program of China</li>
+  	<li>National Natural Science Foundation of China</li>
+  	<li>Research Start-up Funding from SYSU</li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+<footer class="site-footer" style="font-size: 9px; color: #899598;">
+  <span>© 2026 Contemporary Algebraic Geometry · Guangzhou</span>
+  <span>Website by Lei Song</span>
+</footer>
+</body>
+</html>

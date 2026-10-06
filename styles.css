@@ -53,3 +53,34 @@
     background-position: center;
   }
 }
+/* Mobile: keep the title above the complete banner artwork */
+@media screen and (max-width: 850px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 290px;
+    aspect-ratio: auto;
+  }
+
+  .banner-copy {
+    position: relative;
+    inset: auto;
+    order: 1;
+    width: 90%;
+    margin: 19px auto 0;
+  }
+
+  .banner-art {
+    position: relative;
+    inset: auto;
+    order: 2;
+    flex-shrink: 0;
+    width: 100%;
+    height: min(170px, 33.333vw);
+    margin-top: auto;
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+}

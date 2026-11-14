@@ -178,3 +178,27 @@
   font-size: 0.875rem;
   font-weight: 400;
 }
+
+/* Notice above the timetable */
+#program .room-notice {
+  margin: 12px 0 16px;
+  padding: 12px 16px;
+  background: #edf5f2;
+  border-left: 4px solid #07515a;
+  color: #123f58;
+  line-height: 1.7;
+}
+
+/* Room name beneath each date */
+#program .timetable .day-room {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Mark the beginning of the second room assignment */
+#program .timetable thead th.room-change {
+  border-left: 3px solid #ccded8;
+}

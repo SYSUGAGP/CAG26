@@ -202,3 +202,99 @@
 #program .timetable thead th.room-change {
   border-left: 3px solid #ccded8;
 }
+
+
+#program > h2 {
+  margin-bottom: 14px;
+}
+
+#program .program-intro {
+  margin-bottom: 26px;
+  color: #537077;
+  font-size: 16px;
+}
+
+#program .room-notice {
+  margin: 8px 0 16px;
+  font-size: 16px;
+}
+
+/* Five-day timetable */
+#program .timetable-scroll {
+  overflow-x: auto;
+  margin: 16px 0 20px;
+}
+
+#program table.timetable {
+  width: 100%;
+  min-width: 820px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 16px;
+}
+
+#program .timetable th,
+#program .timetable td {
+  border: 1px solid #ccded8;
+  padding: 15px 10px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+#program .timetable thead th {
+  padding-top: 17px;
+  padding-bottom: 16px;
+  background: #07515a;
+  color: #fff;
+  font-weight: 600;
+}
+
+#program .timetable thead th:first-child {
+  width: 130px;
+}
+
+#program .timetable tbody th {
+  background: #f3f7f5;
+  color: #123f58;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+#program .timetable .day-room {
+  display: block;
+  margin-top: 7px;
+  color: #d6e8e4;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+#program .timetable .break-row td {
+  background: #edf5f2;
+  color: #537077;
+  font-style: italic;
+}
+
+#program .timetable .break-row td.photo-cell {
+  font-style: normal;
+}
+
+#program .timetable .discussion-cell {
+  background: #edf5f2;
+  color: #537077;
+  font-style: normal;
+}
+
+#program .timetable .short-row > th {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 15px;
+}
+
+#program .schedule-speaker {
+  color: #124d61;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #a6c4c2;
